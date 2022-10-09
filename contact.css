@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* variables */
+:root {
+    --brand-color: #FFA800;
+    --form-background: #F8F8F8;
+    --footer-background: #242220;
+}
+
+/* general styling */
+a {
+    cursor: pointer;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* nav styling */
+/* main navbar starts here */
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: white;
+    box-shadow: 27px 0px 24px rgba(196, 196, 196, 0.16);
+    padding: 10px 50px;
+    position: fixed;
+}
+
+.firanse-logo {
+    max-width: 200px;
+}
+
+.firanse-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 67%;
+    align-items: center;
+    overflow: hidden !important;
+
+}
+
+.firanse-nav a:hover {
+    color: var(--brand-color);
+}
+
+.firanse-navlist ul {
+    justify-content: space-around;
+    width: 400px;
+    display: flex;
+    overflow: hidden !important;
+    padding: 30px;
+
+}
+
+.firanse-navlist ul li a {
+    color: black;
+    margin: 0 10px;
+}
+
+.login-btn {
+    padding: 14px 20px;
+    height: 52px;
+    background: none;
+    border: 1px solid var(--brand-color);
+    border-radius: 10px;
+    color: var(--brand-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 10px;
+    overflow: hidden;
+
+}
+
+.create-btn {
+    align-items: center;
+    padding: 14px 10px;
+    height: 52px;
+    background: var(--brand-color);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    font-style: normal;
+    margin: 0 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* main navbar ends here */
+/* responsive navbar starts here */
+
+.openNav {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    display: none;
+    color: var(--brand-color);
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 20%;
+    bottom: 20%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 12px 8px;
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--brand-color);
+    display: block;
+    transition: 0.3s;
+}
+
+
+
+.overlay .closebtn {
+    position: absolute;
+    top: -19px;
+    right: 0px;
+    font-size: 45px;
+    color: var(--brand-color);
+}
+
+/* responsive navbar ends here */
+/* main section */
+main {
+    margin-top: 120px;
+}
+
+.firanse-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin: 30px 0px 150px;
+}
+
+.firanse-contact h1 {
+    color: var(--brand-color);
+    font-weight: 600;
+    font-size: 66px;
+    line-height: 110px;
+    text-align: center;
+    letter-spacing: 0.0016em;
+}
+
+.firanse-contact-form {
+    display: block;
+    border: 1px solid var(--brand-color);
+    padding: 30px;
+}
+
+.firanse-contact-form .h3div {
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.firanse-contact-form form {
+    display: flex !important;
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.firanse-contact-form form input {
+    width: 400px;
+    height: 60px;
+    margin: 10px 0;
+    background-color: var(--form-background);
+    border: none;
+    outline: none;
+}
+
+.firanse-contact-form form textarea {
+    width: 400px;
+    margin: 10px 0;
+    background-color: var(--form-background);
+    border: none;
+    outline: none;
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: var(--footer-background);
+    /* height: 300px; */
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 89px 0;
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+}
+
+footer li {
+    font-size: 14px;
+    margin-top: 18px;
+}
+
+footer a {
+    color: white;
+}
+
+.col-secs {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 60px;
+}
+
+
+footer .download {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .download img {
+    width: 80%;
+}
+
+.footer-base {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    padding: 10px;
+    background-color: white;
+    font-weight: 100;
+}
+
+/* media queries */
+@media (max-width:1200px) {
+    .firanse-nav {
+        display: none;
+    }
+}
+
+@media (max-width:800px) {
+    .footer-content {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .col-secs {
+        width: 80%;
+    }
+
+    footer li {
+        font-size: 12px;
+    }
+
+    footer h3 {
+        font-size: 15px;
+    }
+
+    footer .download {
+        width: 100%;
+        margin-top: 30px;
+        padding: 0 60px;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .firanse-contact-form .h3div {
+        width: 250px !important;
+    }
+
+    .firanse-contact-form form {
+        width: 250px !important;
+    }
+
+
+    .firanse-contact-form form input {
+        width: 250px !important;
+
+    }
+
+    .firanse-contact-form form textarea {
+        width: 250px !important;
+    }
+}
+
+@media (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+}
+
+@media(max-width:1200px) {
+    .openNav {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        display: flex !important;
+    }
+
+    .firanse-nav {
+        display: none !important;
+    }
+
+    nav {
+        padding: 30px;
+        box-shadow: 27px 0px 24px rgba(196, 196, 196, 0.16);
+    }
+
+}

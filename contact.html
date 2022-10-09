@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <nav>
+        <div class="firanse-logo">
+            <img src="./img/firanselogo.png" alt="firanse-logo">
+        </div>
+        <div class="firanse-nav">
+            <div class="firanse-navlist">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="firanse-nav-buttons">
+                <a href=""><button class="login-btn">Login</button></a>
+                <a href=""><button class="create-btn">Create Restaurant</button></a>
+            </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="openNav">&#9776;</span>
+
+    </nav>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <div class="firanse-nav-buttons">
+                <a href=""><button class="login-btn">Login</button></a>
+                <a href=""><button class="create-btn">Create Restaurant</button></a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="firanse-contact">
+            <h1>Contact Us</h1>
+            <div class="firanse-contact-form">
+                <div class="h3div">
+                    <h3>Message Us</h3>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email Address">
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="col-secs">
+                <div class="col-section">
+                    <h3>Company</h3>
+                    <ul class="product-list">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-section">
+                    <h3>Follow Us</h3>
+                    <ul class="product-list">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-section">
+                    <h3>Other</h3>
+                    <ul class="product-list">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-section download">
+                <a href="#"><img src="./img/Frame 21 (1).png" alt=""></a>
+                <a href="#"><img src="./img/Frame 21.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-base">
+        <h3>FiranseFood &copy; 2022</h3>
+    </div>
+    <script src="./contact.js"></script>
+</body>
+
+</html>
