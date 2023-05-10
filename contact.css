@@ -208,6 +208,7 @@ main {
     background-color: var(--form-background);
     border: none;
     outline: none;
+    padding:0px 4px;
 }
 
 .firanse-contact-form form textarea {
